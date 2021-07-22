@@ -210,7 +210,7 @@
 		//Random Undreya Spawn
 		{
 			"Name": "RANDOMUNDREYA",
-			"Value": "{{Random:0 Custom_Ridgeside_RidgesideVillage 47 22 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RidgesideVillage 81 70 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Town 98 85 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RSVCliff 17 15 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 BusStop 29 16 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_Ridge 51 24, Custom_Ridgeside_RSVCableCar 9 14 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RidgesideVillage 131 105 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Mountain 31 5 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Mountain 87 33 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Mountain 51 37 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Beach 69 5 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Beach 37 31 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RidgesideVillage 134 42 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Town 46 15 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RidgesideVillage 13 83 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RidgesideVillage 134 23 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Custom_Ridgeside_RidgesideVillage 74 35 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Town 18 8 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0, 0 Town 6 78 0/2600 Custom_Ridgeside_RSVAbandonedHouse 5 5 0}}",
+			"Value": "{{Random:0 Custom_Ridgeside_RidgesideVillage 47 22 0, 0 Custom_Ridgeside_RidgesideVillage 81 70 0, 0 Town 98 85 0, 0 Custom_Ridgeside_RSVCliff 17 15 0, 0 BusStop 29 16 0, 0 Custom_Ridgeside_Ridge 51 24, 0 Custom_Ridgeside_RSVCableCar 9 14 0, 0 Custom_Ridgeside_RidgesideVillage 131 105 0, 0 Mountain 31 5 0, 0 Mountain 87 33 0, 0 Mountain 51 37 0, 0 Beach 69 5 0, 0 Beach 37 31 0, 0 Custom_Ridgeside_RidgesideVillage 134 42 0, 0 Town 46 15 0, 0 Custom_Ridgeside_RidgesideVillage 13 83 0, 0 Custom_Ridgeside_RidgesideVillage 134 23 0, 0 Custom_Ridgeside_RidgesideVillage 74 35 0, 0 Town 18 8 0, 0 Town 6 78 0}}",
 		},
 	],
 
@@ -333,17 +333,7 @@
 			"Name": "Custom_Ridgeside_AlissaShed",
 			"FromMapFile": "Assets/Maps/IndoorMaps/AlissaShed.tmx",
 			"MigrateLegacyNames": [ "AlissaShed" ]
-		},
-		{
-			"Name": "Custom_Ridgeside_AlissaCowBarn",
-			"FromMapFile": "Assets/Maps/IndoorMaps/AlissaCowBarn.tmx",
-			"MigrateLegacyNames": [ "AlissaCowBarn" ]
-		},
-		{
-			"Name": "Custom_Ridgeside_AlissaGoatBarn",
-			"FromMapFile": "Assets/Maps/IndoorMaps/AlissaGoatBarn.tmx",
-			"MigrateLegacyNames": [ "AlissaGoatBarn" ]
-		},        	   	
+		},     	   	
 		{
 			"Name": "Custom_Ridgeside_BertHouse",
 			"FromMapFile": "Assets/Maps/IndoorMaps/BertHouse.tmx",
@@ -398,11 +388,7 @@
 			"Name": "Custom_Ridgeside_LogCabinHotelLobby",
 			"FromMapFile": "Assets/Maps/IndoorMaps/LogCabinHotelLobby.tmx",
 			"MigrateLegacyNames": [ "LogCabinHotelLobby" ]
-		},        
-		{
-			"Name": "Custom_Ridgeside_LogCabinHotelBasement",
-			"FromMapFile": "Assets/Maps/IndoorMaps/LogCabinHotelBasement.tmx",
-		},		
+		},        	
 		{
 			"Name": "Custom_Ridgeside_MaddieHouse",
 			"FromMapFile": "Assets/Maps/IndoorMaps/MaddieHouse.tmx",
@@ -422,6 +408,12 @@
 			"Name": "Custom_Ridgeside_ShiroHouse",
 			"FromMapFile": "Assets/Maps/IndoorMaps/ShiroHouse.tmx",
 			"MigrateLegacyNames": [ "ShiroHouse" ]
+		},
+		
+		//1.3 Maps
+		{
+			"Name": "Custom_Ridgeside_LogCabinEventHall",
+			"FromMapFile": "Assets/Maps/IndoorMaps/LogCabinEventHall.tmx",
 		},
 
 		/*********
@@ -515,10 +507,6 @@
 			"FromMapFile": "Assets/Maps/DynamicMaps/RSVHiddenWarp2.tmx",
 			"MigrateLegacyNames": [ "RSVHiddenWarp2" ]
 		},        	 	   
-		{
-			"Name": "Custom_Ridgeside_MouseHouse",
-			"FromMapFile": "Assets/Maps/DynamicMaps/MouseHouseInside.tmx",
-		},  
 
 	],
 
@@ -577,7 +565,7 @@
 	{
 		"LogName": "Include Dynamic Changes",
 		"Action": "Include",
-		"FromFile": "Data/DynamicChanges/DialogueChanges.json, Data/DynamicChanges/DispositionChanges.json, Data/DynamicChanges/MapChanges.json, Data/DynamicChanges/MapStringChanges.json, Data/DynamicChanges/MusicChanges.json, Data/DynamicChanges/PortraitChanges.json, Data/DynamicChanges/ScheduleChanges.json, Data/DynamicChanges/SpriteChanges.json"
+		"FromFile": "Data/DynamicChanges/DialogueChanges.json, Data/DynamicChanges/DispositionChanges.json, Data/DynamicChanges/MapChanges.json, Data/DynamicChanges/MusicChanges.json, Data/DynamicChanges/PortraitChanges.json, Data/DynamicChanges/ScheduleChanges.json, Data/DynamicChanges/SpriteChanges.json"
 	},
 
 	//Include Intermod Compatibility Files
@@ -597,7 +585,7 @@
 	{
 		"LogName": "Include all the Map Data",		
 		"Action": "Include",
-		"FromFile": "Data/MapData/MapMusic.json, Data/MapData/MapPatches.json, Data/MapData/MapStrings.json, Data/MapData/MapWarps.json",
+		"FromFile": "Data/MapData/MapMusic.json, Data/MapData/MapPatches.json, Data/MapData/MapWarps.json, Data/MapData/MapStrings.json",
 	},
 
 	//Includes NPC Data
@@ -608,6 +596,16 @@
 		"LogName": "Include all the NPCData",
    		"Action": "Include",
    		"FromFile": "Data/NPCData/Animations.json, Data/NPCData/ConversationTopics.json, Data/NPCData/Dialogue.json, Data/NPCData/Dispositions.json, Data/NPCData/GiftTasteData.json, Data/NPCData/Mail.json, Data/NPCData/MovieData.json, Data/NPCData/Portraits.json, Data/NPCData/Romance.json, Data/NPCData/Schedules.json, Data/NPCData/Sprites.json",
+  	},  
+	
+	//Includes Extras
+	/*
+		Includes all data that concerns Extras, that includes: Obelisks,
+	*/
+	{
+		"LogName": "Include all Extras",
+   		"Action": "Include",
+   		"FromFile": "Data/Extras/Obelisks.json",
   	},  
 
   	//Includes Tilesheets

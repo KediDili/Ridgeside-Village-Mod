@@ -10,6 +10,7 @@
 	"CategoriesToSell": [ -19,-74 ],
 	"PortraitPath": "assets/JericShop.png",
 	"Quote": "Hey! How can I help you?",
+	"ClosedMessage": "Closed! Come back next time!",
 	"ShopPrice": -1,
 	"MaxNumItemsSoldInStore": 5,
 	"DefaultSellPriceMultiplier": 0.7,
@@ -554,7 +555,7 @@
 				"Tamarind Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000//!z spring/y 2" ] 
+			"When": [ "f Jeric 1000/!z spring/y 2" ] 
 		},
 		//Bonsters Trees - Summer Jeric 4 hearts Y2
 		{
@@ -566,7 +567,7 @@
 				"Purple Pluot Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000//!z summer/y 2" ] 
+			"When": [ "f Jeric 1000/!z summer/y 2" ] 
 		},
 		//Bonsters Trees - Fall Jeric 4 hearts Y2
 		{
@@ -579,7 +580,7 @@
 				"Pawpaw Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000//!z fall/y 2" ] 
+			"When": [ "f Jeric 1000/!z fall/y 2" ] 
 		},
 		//Bonsters Trees - Winter Jeric 4 hearts Y2
 		{
@@ -589,7 +590,7 @@
 				"Quince Sapling",
 				],
 			"Stock": 2,
-			"When": [ "f Jeric 1000//!z winter/y 2" ] 
+			"When": [ "f Jeric 1000/!z winter/y 2" ] 
 		},
 	],
 	},
@@ -609,7 +610,7 @@
 	"PriceMultiplierWhen": {
 		"0.6": ["f Pika 2000"] 
 		},
-	"When": ["NPCAt Corine 80 56 81 56/t 930 2300/w sunny"],
+	"When": ["t 930 2300/w sunny"],
     "LocalizedQuote": {
     	//remove the "//" from your language
         //"es": "PLACEHOLDER",

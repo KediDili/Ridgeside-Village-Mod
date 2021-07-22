@@ -753,7 +753,7 @@
 
 //Corine starts training (Corine 8 hearts)
 "event-75160125.01": "@? Hey, it's late.#$b#What are you still doing out here?#$b#I'm sorry if I was a bit snappish the last time.$s#$b#I was just really angry about that jerk. He wants me to hurt others? I mean, the nerve!$a",
-"event-75160125.02": "But hey, @.#$b#Thanks for being accompanying me that time.$h#$b#I really appreciate all the things you've been doing for me.#$b#You're too sweet, you know that?$h",
+"event-75160125.02": "But hey, @.#$b#Thanks for accompanying me that time.$h#$b#I really appreciate all the things you've been doing for me.#$b#You're too sweet, you know that?$h",
 "event-75160125.03": "Oh stop it, you!$h",
 "event-75160125.04": "You heard that too, right, @?$a#$b#I have a bad feeling about this.$a#$b#It sounded like it came from the ridge.$a",
 "event-75160125.05": "We should take a look.$a",
@@ -952,7 +952,7 @@
 "event-75160130.09": "I get a migraine when I wear these for too long.$s",
 "event-75160130.10": "So, as I was saying...$h",
 "event-75160130.11": "Flor goes into detail about the experiment she's planning. She seems nervous at first, as if she thinks she's boring you... but when you keep listening and then start to ask questions, she gets more and more enthusiastic.#As she's explaining the trickier points of designing ethical social experiments, she locks eyes with you and--unusually for her--doesn't immediately look away.#You're struck by how vulnerable she seems. You're seeing her eyes without the barrier of her glasses; but more than that, you're seeing her passion, unchecked and unfiltered.#Eventually, seeming to realize that she's been making direct eye contact for a while, she trails off self-consciously and ducks behind her book again.",
-"event-75160130.12": "Um, I'm sorry if I got carried away there...#$b#I know that was a lot to unload on you when this isn't even your field... I mean, your field *of expertise*, not... with the crops... um...$12",
+"event-75160130.12": "Um, I'm sorry if I got carried away there...$12#$b#I know that was a lot to unload on you when this isn't even your field... I mean, your field *of expertise*, not... with the crops... um...$12",
 "event-75160130.13": "So! Um... @...$12#$b#I... I was hoping you'd... You'd he-help me... with my... um...$12#$b#Research... this research, I mean!$12#$b#I... don't know anyone else well enough to ask them... so, um...$12#$b#Plea-please @... I mean! If it's not an imposition...$12",
 "event-75160130.14": "You will?! Thank you, @! I really appreciate this!$1",
 "event-75160130.15": "Flor smiles, relieved.",
@@ -960,7 +960,7 @@
 "event-75160130.17": "Flor whispers to herself:",
 "event-75160130.18": "Calm down! It went fine. Everything's fine!$12#$b#Why do I always do this?$12",
 "event-75160130.19": "Thank you for agreeing to help me, @.#$b#And... for listening to me.$1",
-"event-75160130.20": "Tha-thank you for your time earlier, @...$h",
+//"event-75160130.20": "Tha-thank you for your time earlier, @...$h",
 
 //Flor research (Flor 8 hearts part 2)
 "event-75160132.01": "Okay. All set!$h",
@@ -1154,7 +1154,7 @@
 "event-75160148.07": "I think I have to go, Miss Lenny...$s#$b#I... I have some errands to do. Yeah...$s#$b#Um... I have more work... I have... um...$s",
 "event-75160148.08": "Oh, Ian....$s",
 "event-75160148.09": "Um... Excuse me, @....$s",
-"event-75160148.10": "I know he doesn't actually have any work right now.$s#$b#You're a good friend of his, right @?$s#$bMaybe you can cheer him up. He really needs someone right now.$s",
+"event-75160148.10": "I know he doesn't actually have any work right now.$s#$b#You're a good friend of his, right @?$s#$b#Maybe you can cheer him up. He really needs someone right now.$s",
 "event-75160148.11": "I think it's best if he tells you about his problem.$s#$b#I need to resort all this mail now.$s",
 "event-75160148.12": "Poor Ian... I do wonder why his family hasn't written back yet?$s",
 "event-75160148.13": "I think I saw Ian go towards the Ridge....",
@@ -1868,7 +1868,7 @@
 //Maddie date (Maddie 10 hearts part 2)
 "event-75160140.01": "So uhm... There's this movie, nothing special really, just a movie..$7#$b#It's called Princess Adrianna and the eight elves.$7#$b#It's uhmm... a romance based from a story book when I was a kid..$7#$b#And uhmm... It's not really important but... I mean I'm curious..$7#$b#And... Uhmm..",
 "event-75160140.02": "@...$8#$b#Go with me to PrincessVille, the movie is showing there.?$8#$b#Uhm... Please..$8",
-"event-75160140.03": "I mean... If you don't want too... I--$8#$b#Wait, you said yes?$u#$b#Really?!$l#$b#Oh myyyy!$l",
+"event-75160140.03": "I mean... If you don't want too... I--$8#$b#Wait, you said yes?$u#$b#Really?!$l#$b#Oh my!$l",
 "event-75160140.04": "I mean. Oh okay. Good.$8",
 "event-75160140.05": "We went ahead and rode the bus to PrincessVille",
 "event-75160140.06": "@..$8#$b#It's going to be a long ride..$8#$b#So I'll rest my head on your shoulder for a while okay?$8#$b#Don't move too much while I sleep okay?$8#$b#I mean... uhm... Just hug me..$8",
@@ -1952,7 +1952,7 @@
 "event-75160163.03": "Uh, I'm sorry, Philip, but I don't really get what you're saying.$h#$b#But whatever it is, I hope things get better.$h",
 "event-75160163.04": "I hope so too, Gus.$s#$b#*urps*$a",
 "event-75160163.05": "Psst, @.$h#$b#Can you watch over Philip here? He might pass out any minute now.$h#$b#I keep telling him to lay off with the drinks but he won't budge.#$b#I have to attend to my other customers.",
-"event-75160163.06": "Heyyyyy @!$h#$b#*urp*$6#$b#Howza goin'?$6",
+"event-75160163.06": "Hey @!$h#$b#*urp*$6#$b#Howza goin'?$6",
 "event-75160163.07": "Philip seems really drunk.#Fortunately, he's not the daredevil kind of drunk.#But he can't seem to stand by himself.",
 "event-75160163.08": "Hey, whatcha lookin' at?$6#$b#*urp*$6#$b#I can handle muh booze, y'know!$h#$b#Look at thi--$6",
 "event-75160163.09": "*urp*$u#$b#Oh no, I think I might puke.$u",
@@ -2286,7 +2286,7 @@
 "event-75160172.09": "I'm tired, but it's for all the best reasons. I enjoyed every bit of tonight.$l#$b#Until next time?$l",
 
 //Trinnie taking care of plants (Trinnie 2 hearts)
-"event-75160106.01": "Oh! Heya @!!$h#$b#Whatcha doing all the way here in our farm?#$b#Ooohh, Yyu're visiting big sis Alissa aren't ya???",
+"event-75160106.01": "Oh! Heya @!!$h#$b#Whatcha doing all the way here in our farm?#$b#Ooohh, You're visiting big sis Alissa aren't ya???",
 "event-75160106.02": "Hahaha, I'm just kidding @!$h#$b#Anyway, wait a sec. I have to tend to big ol' Bobbert here.",
 "event-75160106.03": "Oh! Bobbert? He's this little plant here!$h",
 "event-75160106.04": "...And here ya go! Your daily sprinkle of water, my good sir.$h",
@@ -2623,22 +2623,6 @@
 "InterModEvent.EastScarpe.Alissa8Hearts.32": "Alissa and the band then continued to play for the crowd with more songs.#Alissa looks so happy and confident now!#Everyone had fun!",
 "InterModEvent.EastScarpe.Alissa8Hearts.33": "Hey uhmm, @... Thank you for everything!$l#$b#I feel a little bit more confident now!$h#$b#I hope everyone had a ton of fun!$h",
 
-	//IntermodDialogue
-		//Festival Dialogue
-			//Gathering
-"InterModDialogue.GatheringDialogue.Sophia": "PLACEHOLDER",
-"InterModDialogue.GatheringDialogue.Victor": "PLACEHOLDER",
-"InterModDialogue.GatheringDialogue.Olivia": "PLACEHOLDER",
-"InterModDialogue.GatheringDialogue.Andy": "PLACEHOLDER",
-"InterModDialogue.GatheringDialogue.Susan": "PLACEHOLDER",
-
-			//Ember Of Resolutions
-"InterModDialogue.EmberNightDialogue.Sophia": "PLACEHOLDER",
-"InterModDialogue.EmberNightDialogue.Victor": "PLACEHOLDER",
-"InterModDialogue.EmberNightDialogue.Olivia": "PLACEHOLDER",
-"InterModDialogue.EmberNightDialogue.Andy": "PLACEHOLDER",
-"InterModDialogue.EmberNightDialogue.Susan": "PLACEHOLDER",
-
 //Animations
 "Animations.Aguar.Meditate": "%Mr. Aguar seems to be meditating.",
 "Animations.Alissa.Sing": "%Alissa is singing. But she seems a little bit shy.",
@@ -2655,10 +2639,6 @@
 "NPC.MapLocations.HikeName": "The Hike",
 "NPC.MapLocations.BloomingHillName": "Blooming Hill Farm",
 "NPC.MapLocations.NightingaleName": "Nightingale Orchard",
-
-//Dynamic Changes
-	//MapString Change
-		"DynamicChanges.Winter.Crops": "It's winter, all the crops are hidden under a thick blanket of snow!",
 
 //MapStrings
 "MapString.rsv.close": "It's closed.",
@@ -2695,7 +2675,10 @@
 "MapString.rsv.20": "The jars are full of fruit preserves.#They smell good!",
 "MapString.rsv.21": "Fruit drops when it's ripe.#Then it gets collected and made into preserves.",
 "MapString.rsv.22": "Alissa's Mailbox#Nightingale Orchard",
-"MapString.rsv.23": "These crops look very healthy.",
+"MapString.rsv.23.spring": "These crops look very healthy.",
+"MapString.rsv.23.summer": "These crops look very healthy.",
+"MapString.rsv.23.fall": "These crops look very healthy.",
+"MapString.rsv.23.winter": "It's winter, all the crops are hidden under a thick blanket of snow!",
 "MapString.rsv.24": "This shipping bin is filled to the brim.",
 "MapString.rsv.25": "It looks like someone scratched 'L + F' here with a blade.",
 "MapString.rsv.26": "It's for children to play on.#It's old and rusty. No one's played on this in a long time.",
@@ -3151,13 +3134,13 @@
 
 			//Miracle at Coldstar Ranch (WHOLESOME) (TEAR JERKER) (FAMILY)
 "MovieData.Corine.WinterMovie0.Like.BeforeMovie": "I'm excited for this one. I heard it makes everyone cry.$h",
-"MovieData.Corine.WinterMovie0.Like.DuringMovie": "%Corine is smiling as she cries",
+"MovieData.Corine.WinterMovie0.Like.DuringMovie": "%Corine is smiling as she cries.",
 "MovieData.Corine.WinterMovie0.Like.AfterMovie": "That was really good. My heart is still attached to the characters.$h",
 
 			//Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
-"MovieData.Aguar.SpringMovie1.Like.BeforeMovie": "A documentary, huh? This could be interesting.",
-"MovieData.Aguar.SpringMovie1.Like.DuringMovie": "Wow, I didn't know about some of this.$h",
-"MovieData.Aguar.SpringMovie1.Like.AfterMovie": "Really makes you want to travel, doesn't it, @?$h",
+"MovieData.Corine.SpringMovie1.Like.BeforeMovie": "A documentary, huh? This could be interesting.",
+"MovieData.Corine.SpringMovie1.Like.DuringMovie": "Wow, I didn't know about some of this.$h",
+"MovieData.Corine.SpringMovie1.Like.AfterMovie": "Really makes you want to travel, doesn't it, @?$h",
 
 			//Wumbus (SCI-FI) (COMEDY)
 "MovieData.Corine.SummerMovie1.Like.BeforeMovie": "What's a 'Wumbus', @? I hope it's not dangerous.",
@@ -3198,7 +3181,7 @@
 			//Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
 "MovieData.Ezekiel.SpringMovie1.Love.BeforeMovie": "Now this might be interesting. I've always wanted to see other places.$h",
 "MovieData.Ezekiel.SpringMovie1.Love.DuringMovie": "If the world was at peace, we could easily go to different countries. Ah, I like this movie.$h",
-"MovieData.Ezekiel.SpringMovie1.Love.AfterMovie": "T%Ezekiel is smiling wistfully as he thinks about the different locations shown.$h",
+"MovieData.Ezekiel.SpringMovie1.Love.AfterMovie": "%Ezekiel is smiling wistfully as he thinks about the different locations shown.$h",
 
 			//Wumbus (SCI-FI) (COMEDY)
 "MovieData.Ezekiel.SummerMovie1.Dislike.BeforeMovie": "What is this? A science movie? Bah.",
@@ -3601,9 +3584,9 @@
 "MovieData.Olga.FallMovie0.Like.AfterMovie": "I had a great time, @. Thank you for inviting me.$h",
 
 			//Miracle at Coldstar Ranch (WHOLESOME) (TEAR JERKER) (FAMILY)
-"MovieData.Aguar.WinterMovie0.Love.BeforeMovie": "I've been wanting to watch this. Thanks for bringing me along.$h",
-"MovieData.Aguar.WinterMovie0.Love.DuringMovie": "%Olga is crying while smiling gently as she watches",
-"MovieData.Aguar.WinterMovie0.Love.AfterMovie": "This has been such a nice time, I feel refreshed. Thank you for inviting me.$h",
+"MovieData.Olga.WinterMovie0.Love.BeforeMovie": "I've been wanting to watch this. Thanks for bringing me along.$h",
+"MovieData.Olga.WinterMovie0.Love.DuringMovie": "%Olga is crying while smiling gently as she watches",
+"MovieData.Olga.WinterMovie0.Love.AfterMovie": "This has been such a nice time, I feel refreshed. Thank you for inviting me.$h",
 
 			//Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
 "MovieData.Olga.SpringMovie1.Dislike.BeforeMovie": "Huh? This one? Uhh, Okay?$s",
@@ -4507,8 +4490,8 @@
 "Romance.MovieInvite.Spouse.Philip": "A movie? Great idea, honey!$h#$b#We should make a date night out of this!$l#$e#A dinner under the stars after the movie, maybe?$6",
 
 	//Shiro
-"Romance.shiro0": "Slap me, maybe I'm dreaming?$h#$b#I can't believe I'm getting married!$l",
-"Romance.shiro1": "I'm so happy!$l#$b#I'm genuinely so happy right now, @. I can't wait to tell Yuuma.$h",
+"Romance.Engagement.Shiro0": "Slap me, maybe I'm dreaming?$h#$b#I can't believe I'm getting married!$l",
+"Romance.Engagement.Shiro1": "I'm so happy!$l#$b#I'm genuinely so happy right now, @. I can't wait to tell Yuuma.$h",
 "Romance.give.flowersA.Shiro": "@? What... Are you serious?$u#$b#Yeah, absolutely!$h#$b#I'll be honest, I was trying to get up the nerve to buy a bouquet for you.$l#$b#But I wasn't sure if you were just being really nice to me, or actually felt the same way...$l#$b#Oh man, my heart is pounding.$h",
 "Romance.give.flowersB.Shiro": "@? What... Are you serious?$u#$b#Yeah, absolutely!$h#$b#I'll be honest, I was trying to get up the nerve to buy a bouquet for you.$l#$b#But I wasn't sure if you were just being really nice to me, or actually felt the same way...$l#$b#Oh man, my heart is pounding.$h",
 "Romance.stardrop.gift.Shiro": "Hey, I have someting for you.$h#$b#I just want you to know how glad I am that you're mine. It makes everything worth it, really.$l#$b#I really love, you, @.$l",
@@ -4561,9 +4544,9 @@
 "Alissa.Dialogue.winter_1": "The winter can be a good thing too, I get to relax and focus on other stuff this season besides farming.$u",
 "Alissa.Dialogue.winter_7": "Are you going to participate in the fishing competition for tomorrow's festival, @?#$b#Well if you are, good luck! You sure need it, haha.$h#$b#I hear the competition between Mr. Ezekiel, Uncle Bert and Jeric are so close that they're going neck and neck!",
 "Alissa.Dialogue.winter_14": "Oh yeah! Tomorrow's the start of the night market right?#$e#I can't wait to listen to the mermaid's song again. I hope I can try and follow the melody.$7",
-//"Alissa.Dialogue.winter_15": "I bought some exotic seeds. I can't wait to plant them next season!$h",
+"Alissa.Dialogue.winter_15": "I bought some exotic seeds. I can't wait to plant them next season!$h",
 //"Alissa.Dialogue.winter_16": "Auntie saw a microphone for sale.#$b#I was really embarrassed when she told me to test it on the spot.$7",
-"Alissa.Dialogue.winter_17": "I hope you got some interesting items, @! I was able to buy some good stuff.$h",
+//"Alissa.Dialogue.winter_17": "I hope you got some interesting items, @! I was able to buy some good stuff.$h",
 "Alissa.Dialogue.winter_24": "The year's ending, @. Have you had a good year?#$b#I sure hope you did. Let's make the most out of the next alright?$h",
 //Days of the Week
 //0 Hearts
@@ -4838,7 +4821,7 @@
 "Corine.Dialogue.spring_23": "I'm looking forward to the Flower Dance tomorrow.#$b#Not just because of the dance though, it's one of those rare days where I get to see all my friends in one place.$h",
 
 //Summer
-"Corine.Dialogue.summer_1": "Pika cooks some amazing barbecue during the summer!$h#$b#I sometimes just can't resist and buy some even if I work the counter.",
+"Corine.Dialogue.summer_1": "Pika cooks some amazing barbecue during the summer!$h#$b#I sometimes just can't resist buying some even if I work the counter.",
 "Corine.Dialogue.summer_10": "Papa said he'll be bringing some type of weird crop he used in his chef days in the army. I'm so worried...$s",
 "Corine.Dialogue.summer_27": "Will you be at the beach tomorrow night too? It would be amazing to have everyone I know see the beautiful scenery.#$b#Everyone deserves to take a little break, right?$h",
 
@@ -4848,7 +4831,7 @@
 "Corine.Dialogue.fall_26": "I hope I see you in costume tomorrow night.#$b#Ysa said she doesn't want to be wearing one, but I'll be pestering her until she agrees!#$e#This is gonna be fun!",
 
 //Winter
-"Corine.Dialogue.winter_1": "Ooohh, it's so cold!!$u#$b#This is a very fun season though! I especially love drinking hot cocoa by the fire.",
+"Corine.Dialogue.winter_1": "Ooohh, it's so cold!!$u#$b#This is a very fun season, though! I especially love drinking hot cocoa by the fire.",
 "Corine.Dialogue.winter_7": "I'm glad that the fish are released after the fishing competition tomorrow.#$b#It'd be a big waste to try and cook them all; they'd never get eaten in time.",
 "Corine.Dialogue.winter_14": "I hope I get to buy a cute necklace tomorrow. I once saw a pretty blue shell necklace when I was young!$h#$b#I wanted to buy it then my Mama said it was not for kids.",
 //"Corine.Dialogue.winter_15": "Pika always gives me a bonus before the night market.#$h#He’s such a generous boss!",
@@ -4881,18 +4864,18 @@
 "Corine.Dialogue.Mon4": "I like seeing people's faces when they're really happy with their food.#$b#It makes this job so rewarding being able to help make people so happy...$h#$b#Although, I think I'm taking Pika's credit if I say that, haha!",
 "Corine.Dialogue.Tue4": "Hello, @! It's nice seeing you here.$h#$b#How are you today?",
 "Corine.Dialogue.Wed4": "I sometimes visit the town, It's really nice to learn a thing or two from Gus and Emily.#$b#They're amazing people.$h",
-"Corine.Dialogue.Thu4": "Papa said he thinks Gus' and Pika's jobs are easy, and that anyone could do them.#$b#Oh, that old man can sometimes be so insensitive.$s#$b#He's a good man though. Don't get the wrong idea.",
+"Corine.Dialogue.Thu4": "Papa said he thinks Gus' and Pika's jobs are easy, and that anyone could do them.#$b#That old man can be so insensitive sometimes.$s#$b#He's a good man though. Don't get the wrong idea.",
 "Corine.Dialogue.Fri4": "Hi, @! It's good seeing you.#$b#You're looking a lot sharper today. Good for you!$h",
 "Corine.Dialogue.Sat4": "I can't remember if I locked the door to my room, and it's driving me crazy!$a#$b#Dad is a terrible snoop, I know he'll go poking around if he has a chance.$a",
 "Corine.Dialogue.Sun4": "I've been saving to buy a new bracelet! I have a little collection haha!$h#$b#How about you, @? Do you collect anything?",
 
 //6 Hearts
 "Corine.Dialogue.Mon6": "Sometimes I join Ysa at the gym when she's practicing.#$b#She says it's just for fun, but she dances so gracefully!",
-"Corine.Dialogue.Tue6": "Papa is a big collector of artifacts.#$b#I told him to donate some at the museum but he refuses to do so.$s#$b#He takes the phrase 'finders-keepers' too seriously.$a",
+"Corine.Dialogue.Tue6": "Papa is a big collector of artifacts.#$b#I suggested he donate some to the museum, but he refused.$s#$b#He takes the phrase 'finders-keepers' too seriously.$a",
 "Corine.Dialogue.Wed6": "Today's a beautiful day, @.$h#$b#I hope you have a good day and finish everything you want to accomplish!",
 "Corine.Dialogue.Thu6": "Yuuma, the quiet little boy, comes here sometimes to pick up some food to go.#$b#I do wonder if he's okay? He seems so busy all the time.$s",
 "Corine.Dialogue.Fri6": "Lenny is such a sweet soul! She and I talk about lots of stuff when she gets to visit.$h#$b#Pika scolds me when I get too carried away with the chit-chat though, haha.$h",
-"Corine.Dialogue.Sat6": "I went to town the other day to buy groceries and Alex almost hit me with his football!$a#$b#I almost dropped a week's worth of groceries! I was so scared!$a#$b#He said he was sorry though and things went well so it's fine.$s#$b#He even offered to help me with bringing the groceries back!",
+"Corine.Dialogue.Sat6": "I went to town the other day to buy groceries and Alex almost hit me with his football!$a#$b#I almost dropped a week's worth of groceries! I was so scared!$a#$b#He said he was sorry though and things went well, so it's fine.$s#$b#He even offered to help me with bringing the groceries back!",
 "Corine.Dialogue.Sun6": "Papa does not like boys talking to me. He is so old fashioned.$s#$b#I just want to talk with my friends. Hmph.$a",
 
 //8 Hearts
@@ -5848,7 +5831,7 @@
 "Lenny.Dialogue.summer_27": "Your grandpa used to take me and Lewis to see the jellies every summer.#$b#You remind me of him, you know...$s#$e#Don't worry, I won't make you take me!$h",
 
 //Fall
-"Lenny.Dialogue.fall_1": "The most profitable crop in fall is always pumpkin.#$b#Plant some now, and you'll have both a tidy profit and plenty to eat!$h$e#They're very versatile.#$b#Boil 'em, mash 'em, stick 'em in a pie.$h",
+"Lenny.Dialogue.fall_1": "The most profitable crop in fall is always pumpkin.#$b#Plant some now, and you'll have both a tidy profit and plenty to eat!$h#$e#They're very versatile.#$b#Boil 'em, mash 'em, stick 'em in a pie.$h",
 "Lenny.Dialogue.fall_15": "Are you done preparing your grange display for tomorrow's fair, @?#$e#I look forward to seeing it!$h#$b#I'm going to be one of the judges, you know.$4",
 "Lenny.Dialogue.fall_26": "I love setting up for Spirit's Eve every year, but boy is it a lot of work.$s#$e#Where's Ian? I should ask him to help out.",
 
@@ -5929,7 +5912,7 @@
 "Lenny.Dialogue.Resort": "Hiya, @!$h#$e#They say the water on the island has healing properties.#$e#Do you believe that?$4",
 
 
-"Lola.Dialogue.Introduction": "Hello, dear!$h#$bYou're new here, right?$h#$b#It's so nice to see new faces in town.$h#$b#My name is Lola and I live here with my husband, Freddie.#$e#Don't mind us, just some old lovebirds enjoying the peace and quiet!$h",
+"Lola.Dialogue.Introduction": "Hello, dear!$h#$b#You're new here, right?$h#$b#It's so nice to see new faces in town.$h#$b#My name is Lola and I live here with my husband, Freddie.#$e#Don't mind us, just some old lovebirds enjoying the peace and quiet!$h",
 
 //Spring
 "Lola.Dialogue.spring_1": "Spring time, hmm?#$b#I never really understood the fascination with this season.#$b#Not really my personality, you know...",
@@ -6091,7 +6074,7 @@
 "Maddie.Dialogue.Mon8": "Hi @! Nice to see you today.$h#$b#You've been a good friend to me, I always enjoy seeing you show up!$h",
 "Maddie.Dialogue.Tue8": "Oh, I didn't see you there @. My mind's been preoccupied lately.#$b#Oh, by what? Nothing in particular...$8",
 "Maddie.Dialogue.Wed8": "I'm in the mood for something sweet today. Like chocolate.#$b#Or maybe a smoothie. What do you think?",
-"Maddie.Dialogue.Thu8": "Hi there @, I'm on my way to get food from the saloon. Wanna come with?$b#It'd be nice to have some company, don't you think?$h",
+"Maddie.Dialogue.Thu8": "Hi there @, I'm on my way to get food from the saloon. Wanna come with?#$b#It'd be nice to have some company, don't you think?$h",
 "Maddie.Dialogue.Fri8": "I'm a little happy today because Mr. Aguar gave me the day off to go and explore the valley.$h#$b#I'm currently on my search for some bunnies. They're just so adorable!$l",
 "Maddie.Dialogue.Sat8": "Come to see me again? You must really have missed me?$6#$e#Haha, I'm only kidding!$l#$b#I always like talking to you, come chat with me whenever you want!$h",
 "Maddie.Dialogue.Sun8": "I'm sorry, I'm a little upset. I saw a fluffy panda on tv without a home.$10#$e#They were filming him on the streets and they weren't helping him!$a#$b#And instead of giving him food they were making him work for it!$10#$b#I don't understand why people would want to watch that!$a",
@@ -6242,7 +6225,7 @@
 "Philip.Dialogue.winter_14": "The Night Market starts tomorrow?$u#$b#I wonder if they'll have any rare books...",
 //"Philip.Dialogue.winter_15": "Did you see the mermaid?$u#$b#I’m not crazy, right?#$b#That really happened?$u",
 "Philip.Dialogue.winter_16": "I think I need to stop trying to make all this make sense.$s#$b#Mermaids exist, pigs can pull boats, it’s fine.$u",
-//"Philip.Dialogue.winter_17": "I don’t know how, but they had a first-run copy of Cyberman #13!$u#$b#I’ve wanted this for years!$h",
+//"Philip.Dialogue.winter_17": "I don’t know how, but they had a first-run copy of Cyberman no. 13!$u#$b#I’ve wanted this for years!$h",
 "Philip.Dialogue.winter_24": "It'll be a new year soon.#$e#Time sure does fly. Was it a good year for you?$h",
 
 //Days of the Week
@@ -6370,7 +6353,7 @@
 //4 Hearts
 "Pika.Dialogue.Mon4": "That grumpy old man George usually brightens up if you give him some fried mushrooms.$h#$b#If you want, I can fix you a plate.#$e#The recipe is easy: common mushrooms, morel and oil.",
 "Pika.Dialogue.Tue4": "The restaurant has been flourishing lately.$h#$b#Lots of customers means more money to set aside for Keahi's future.#$e#If only my darling wahine were here.$s#$b#I hope I'm making her proud.$4",
-"Pika.Dialogue.Wed4": "I'm thinking of making Keahi a treehouse.#$b#I'm just thinking about what kind of materials I should use.$e#Hmm... I'm going to ask Robin for her expertise.",
+"Pika.Dialogue.Wed4": "I'm thinking of making Keahi a treehouse.#$b#I'm just thinking about what kind of materials I should use.#$e#Hmm... I'm going to ask Robin for her expertise.",
 "Pika.Dialogue.Thu4": "Keahi's always running off somewhere.$a#$b#I can usually rely on Trinnie to keep him in check but...#$e#I just hope he's being safe.$s",
 "Pika.Dialogue.Fri4": "Aloha, @! You should try my pepper poppers today.$h#$b#I picked the recipe up when my family visited Gotoro, across the Gem Sea.#$e#They really like their spicy food over there.$h",
 "Pika.Dialogue.Sat4": "%Pika doesn't notice you. He seems to be mumbling something about chocolate fish tacos.",
@@ -6717,7 +6700,7 @@
 "Undreya.Dialogue.winter_24": "I should learn to be a good elf from time to time.#$b#My friend wouldn't like it if I overstole...$s#$e#Yeah... I should learn to be good once in a while...$s",
 
 //Days of the Week
-"Undreya.Dialogue.Mon": "Oh! You found me! As promised. Here's a prize! [60 72 167 206 336] $h#$e#I like to hide everywhere!$h#$b$You get to hear some interesting stories!$h",
+"Undreya.Dialogue.Mon": "Oh! You found me! As promised. Here's a prize! [60 72 167 206 336] $h#$e#I like to hide everywhere!$h#$b#You get to hear some interesting stories!$h",
 "Undreya.Dialogue.Tue": "Oh! You found me! As promised. Here's a prize! [60 72 167 206 336] $h#$e#Once I transformed into a rock and a passing kid almost threw me to the bottom of the lake!$a#$b#I'll never forget that red shirt shortie!$a",
 "Undreya.Dialogue.Wed": "Oh! You found me! As promised. Here's a prize! [60 72 167 206 336] $h#$e#I love to transform into a teddy bear. It feels so good to be hugged!$h#$b#Hey! No! I don't like being hugged when I'm in my elf form!$a#$e#Well... Unless if it was him...$s",
 "Undreya.Dialogue.Thu": "Hey. Thanks for the ice cream the other day!$h#$e#Huh? What ice cream?#$b#Oh yeah! I forgot. I stole some change from you the other day Teehee < $h#$b#I hope you don't mind! It's for charity!$h#$e#Thursdays are rest days!$h#$b#No stealing for today!$h",
@@ -6993,7 +6976,7 @@
 
 ///Outdoors
 "Alissa.MarriageDialogue.Outdoor_0": "Darling! What a wonderful day it is to be outside.$h#$e#Can you smell the flowers around us?#$b#I mean, even the birds are singing a great melody!$h#$b#~Hi birds!~$6",
-"Alissa.MarriageDialogue.Outdoor_1": "~I'm wishing, for the one I love. To find me, by this ridgeside lake~$6#$bEOhhh, no, that was bad rhyming even for me.$7",
+"Alissa.MarriageDialogue.Outdoor_1": "~I'm wishing, for the one I love. To find me, by this ridgeside lake~$6#$b#Ohhh, no, that was bad rhyming even for me.$7",
 "Alissa.MarriageDialogue.Outdoor_2": "I wanna write you a song, love. I want to make one as beautiful and as sweet as you are.$l",
 "Alissa.MarriageDialogue.Outdoor_3": "~Have you ever seen such a beautiful sight! I could almost kiss the stars for shining so bright.~$6#$b#I don't know where that song came from, it just went inside my head, haha.$h#$b#Must've been a childhood memory.",
 "Alissa.MarriageDialogue.Outdoor_4": "Ohh, darling, did you see our crops?#$b#We have so much and they all look so good! I'm so happy.$h",
@@ -7060,13 +7043,13 @@
 
 ///Summer
 "Corine.MarriageDialogue.summer_1": "Why don't we have a barbeque outside?$h#$b#I'll stop by Pika's for some premium cuts of meat!",
-"Corine.MarriageDialogue.summer_10": "Papa is always so talkative about what he'll bring for the Luau tomorrow.#$e#He won't admit it but he really is excited.$h",
+"Corine.MarriageDialogue.summer_10": "Papa is always so talkative about what he'll bring for the Luau tomorrow.#$e#He won't admit it, but he really is excited.$h",
 "Corine.MarriageDialogue.summer_27": "I'm excited to go to the beach tomorrow.$h#$e#It looks like the beach wouldn't be the only beautiful scenery I'll be looking at tomorrow night.$l",
 
 ///Fall
 "Corine.MarriageDialogue.fall_1": "Can you see how beautiful the season is?#$b#How the leaves change color and fall off the trees?",
 "Corine.MarriageDialogue.fall_15": "Hehe, I want to win all the throwing games tomorrow, I think I can win with all the training I've gotten from Jio.#$b#Hah, that'll teach those rigged games a lesson!$h",
-"Corine.MarriageDialogue.fall_26": "I'm thinking about wearing my ninja outfit tomorrow night..#$b#I think they won't suspect anything haha.$h#$e#They might think it's just a costume but in reality, I'm going to get ready because Jio said that the monsters might pay us a visit.",
+"Corine.MarriageDialogue.fall_26": "I'm thinking about wearing my ninja outfit tomorrow night...#$b#No one should suspect anything, haha. They'll think it's just a costume.$h#$e#But in reality, I want to be ready because Jio said that the monsters might pay us a visit.",
 
 ///Winter
 "Corine.MarriageDialogue.winter_1": "A season for warm hugs and gift giving is here.#$b#That's me asking for a hug, you dork.$l",
@@ -7084,16 +7067,16 @@
 "Corine.MarriageDialogue.patio_Corine": "It feels so refreshing to train here in your farm, honey.",
 
 ///Rainy Day
-"Corine.MarriageDialogue.Rainy_Day_0": "Hey, honey. Can you please bring an umbrella when you go out?",
+"Corine.MarriageDialogue.Rainy_Day_0": "Hey, honey. Can you please take an umbrella with you when you go out?",
 "Corine.MarriageDialogue.Rainy_Day_1": "Honey, can we just stay in? It's so cold and I'm too tired to train.$l",
 "Corine.MarriageDialogue.Rainy_Day_2": "I'm going over to Pika's and see what I can help with at the restaurant.",
 "Corine.MarriageDialogue.Rainy_Day_3": "I fell the other day and my hip has been bothering me. I think I should take it easy today.$s",
 "Corine.MarriageDialogue.Rainy_Day_4": "Take care of yourself today, alright? I'm on my way to my training out on the ridge!$h#$e#Yeah, even with the rain...$s#$b#Jio says it's much more effective for some reason.",
-"Corine.MarriageDialogue.Rainy_Day_Corine": "Ahhh, the rain. Outside feels so good!$h#$b#It makes my training days heavier and at the same time more fun.",
+"Corine.MarriageDialogue.Rainy_Day_Corine": "Ahhh, the rain. Outside feels so good!$h#$b#It makes my training days more challenging and more fun.",
 
 ///Rainy Night
 "Corine.MarriageDialogue.Rainy_Night_0": "Oh, you're home already!$h#$b#How was your day?$l",
-"Corine.MarriageDialogue.Rainy_Night_1": "I brought home some soup over from work, would you like to set the table?",
+"Corine.MarriageDialogue.Rainy_Night_1": "I brought home some soup from work! Would you like to set the table?",
 "Corine.MarriageDialogue.Rainy_Night_2": "Hi, honey! Have you just arrived? I'm just about to run a bath for myself.$l",
 "Corine.MarriageDialogue.Rainy_Night_3": "Honey! Hi! Welcome back. I missed you a lot today, for some reason...$l",
 "Corine.MarriageDialogue.Rainy_Night_4": "Oh, you're all wet! Come on, get changed into some dry clothes.$a",
@@ -7101,8 +7084,8 @@
 "Corine.MarriageDialogue.Rainy_Night_Corine": "Welcome home! Dinner is in the oven.#$b#It's a recipe Pika taught me!$h",
 
 ///Indoor Day
-"Corine.MarriageDialogue.Indoor_Day_0": "You up already? I won't judge if you got a couple more hours of sleep!$h",
-"Corine.MarriageDialogue.Indoor_Day_1": "Did you sleep well, @? Come over here, I made you some breakfast.#$b#I'm also going to make a packed lunch for you! [211 194 204]$h",
+"Corine.MarriageDialogue.Indoor_Day_0": "You up already? I won't judge if you want a couple more hours of sleep!$h",
+"Corine.MarriageDialogue.Indoor_Day_1": "Did you sleep well, @? Come over here, I made you some breakfast.#$b#I also made a packed lunch for you! [211 194 204]$h",
 "Corine.MarriageDialogue.Indoor_Day_2": "I had a terrible dream last night, @.$s#$b#I dreamt that I was attacking some monsters, then you jumped out of nowhere and got in between!$s",
 "Corine.MarriageDialogue.Indoor_Day_3": "Good morning! Another day, another new set of chores!#$b#Pika asked me to come in early today because he has some big orders to prepare for.#$b#I wonder what it is?",
 "Corine.MarriageDialogue.Indoor_Day_4": "Have a great day and take care of yourself okay?#$b#See you when you come home!$h",
@@ -7157,7 +7140,7 @@
 //Neutral
 "Corine.MarriageDialogue.Neutral_0": "Hey, @, I'm planning on going over to Ysa's today to work out with her.",
 "Corine.MarriageDialogue.Neutral_1": "Pika said that he'd appreciate it if we visit more often. I mean, why not? I work there anyway!",
-"Corine.MarriageDialogue.Neutral_2": "Do you think I could handle this kind of job? I'm having doubts.",
+"Corine.MarriageDialogue.Neutral_2": "Do you think I can really handle this kind of job? I'm having doubts.",
 "Corine.MarriageDialogue.Neutral_3": "Have you decided what you'd like to have for dinner? I have time to prepare for dinner today. I'm sorry if I sometimes can't cook or take care of you a lot. I'm always busy.",
 "Corine.MarriageDialogue.Neutral_4": "Mr. Richard has offered us a free night's stay at the hotel if we'd like to have a staycation. Let me know when you're available and we'll make a date of it, okay?",
 "Corine.MarriageDialogue.Neutral_5": "I went over to Pierre's to run some errands and got distracted by a new brand of sugar... I think I've been working for Pika for too long!",
@@ -7174,8 +7157,8 @@
 "Corine.MarriageDialogue.Bad_4": "I don't see the point in even arguing anymore.$s#$b#It's like you just choose to see yourself and think of yourself rather than us both in this situation.$a",
 "Corine.MarriageDialogue.Bad_5": "Weren't you the first person to support me in everything that I did before? What happened now?$s",
 "Corine.MarriageDialogue.Bad_6": "I've never wanted to hurt another human, but you're really pushing me to my limits.$a",
-"Corine.MarriageDialogue.Bad_7": "I've been trying to reason with you but your mind is just closed.$a#$b#I'm too tired for this.$s",
-"Corine.MarriageDialogue.Bad_8": "If I'd known that we'd reach this point I would've never agreed to this relationship.$s",
+"Corine.MarriageDialogue.Bad_7": "I've been trying to reason with you, but your mind is just closed.$a#$b#I'm too tired for this.$s",
+"Corine.MarriageDialogue.Bad_8": "If I'd known that we'd reach this point, I would've never agreed to this relationship.$s",
 "Corine.MarriageDialogue.Bad_9": "That does it. I'm done. I have much better things that are worth my attention.$a",
 
 ///Spring
@@ -7198,8 +7181,8 @@
 "Flor.MarriageDialogue.winter_7": "Please be careful out on the ice tomorrow.$s#$b#I was reading about neurological reactions to extreme environment changes,#$b#And the article included what happens in the brain and body when someone falls through ice into frigid water.$s#$b#It was... well, it was scary.$s",
 "Flor.MarriageDialogue.winter_14": "Do you think the rare book vendor will be with the merchants this year?#$b#I've been trying to track down an old philosophy book someone in my graduate program recommended years ago on epistemic injustice, but it's impossible to find!$h",
 //"Flor.MarriageDialogue.winter_15": "Despite the crowd, the night market never fails to make me feel giddy.$h#$b#And... I get to spend some time with you here too.$1",
-//"Flor.MarriageDialogue.winter_16": "Honey! Guess what?$h#$b$I found so many rare books that I've been wanting for a while!$h",
-"Flor.MarriageDialogue.winter_17": "The art vendor has so many beautiful pieces to sell!#$b$Do you think we could get one to hang on the wall?$h",
+//"Flor.MarriageDialogue.winter_16": "Honey! Guess what?$h#$b#I found so many rare books that I've been wanting for a while!$h",
+"Flor.MarriageDialogue.winter_17": "The art vendor has so many beautiful pieces to sell!#$b#Do you think we could get one to hang on the wall?$h",
 "Flor.MarriageDialogue.winter_24": "Can we place a wreath on our door?$h#$b# I read about how evergreen boughs and holly represent eternal life...#$b#But that's not why I want to put one up. I just think they're pretty.$h",
 
 ///Room
@@ -8223,4 +8206,137 @@
 
 "Shiro.summit.1": "Can you believe I made it to the summit?$h",
 "Shiro.summit.2": "When we first met, there were days I struggled to get out of bed...$s#$b#...now look at me...$h#$b#You’ve been so patient and understanding.$l#$b#Your willingness to take care of me while I recover from my injuries has allowed Yuuma to be a kid again.$h#$b#I can never repay you, but I’ll never stop showing you how much I love you.$l",
+
+
+//IntermodDialogue
+		//Festival Dialogue
+			//Gathering
+"InterModDialogue.GatheringDialogue.Sophia": "PLACEHOLDER",
+"InterModDialogue.GatheringDialogue.Victor": "PLACEHOLDER",
+"InterModDialogue.GatheringDialogue.Olivia": "PLACEHOLDER",
+"InterModDialogue.GatheringDialogue.Andy": "PLACEHOLDER",
+"InterModDialogue.GatheringDialogue.Susan": "PLACEHOLDER",
+
+			//Ember Of Resolutions
+"InterModDialogue.EmberNightDialogue.Sophia": "PLACEHOLDER",
+"InterModDialogue.EmberNightDialogue.Victor": "PLACEHOLDER",
+"InterModDialogue.EmberNightDialogue.Olivia": "PLACEHOLDER",
+"InterModDialogue.EmberNightDialogue.Andy": "PLACEHOLDER",
+"InterModDialogue.EmberNightDialogue.Susan": "PLACEHOLDER",
+
+//Hotel Tourist population dialogues
+
+//General Days
+//Small amount of guests
+"Richard.HotelReaction.Small": "placeholder",
+"Ysabelle.HotelReaction.Small": "placeholder",
+"Philip.HotelReaction.Small": "placeholder",
+"Flor.HotelReaction.Small": "placeholder",
+"Naomi.HotelReaction.Small": "placeholder",
+"Ceina.HotelReaction.Small": "placeholder",
+"Ian.HotelReaction.Small": "placeholder",
+//Moderate amount of guests
+"Richard.HotelReaction.Moderate": "placeholder",
+"Ysabelle.HotelReaction.Moderate": "placeholder",
+"Philip.HotelReaction.Moderate": "placeholder",
+"Flor.HotelReaction.Moderate": "placeholder",
+"Naomi.HotelReaction.Moderate": "placeholder",
+"Ceina.HotelReaction.Moderate": "placeholder",
+"Ian.HotelReaction.Moderate": "placeholder",
+//Large amount of guests
+"Richard.HotelReaction.Large": "placeholder",
+"Ysabelle.HotelReaction.Large": "placeholder",
+"Philip.HotelReaction.Large": "placeholder",
+"Flor.HotelReaction.Large": "placeholder",
+"Naomi.HotelReaction.Large": "placeholder",
+"Ceina.HotelReaction.Large": "placeholder",
+"Ian.HotelReaction.Large": "placeholder",
+
+//Day after RSV Gathering Festival
+"Richard.HotelReaction.Gathering": "placeholder",
+"Ysabelle.HotelReaction.Gathering": "placeholder",
+"Philip.HotelReaction.Gathering": "placeholder",
+"Flor.HotelReaction.Gathering": "placeholder",
+"Naomi.HotelReaction.Gathering": "placeholder",
+"Ceina.HotelReaction.Gathering": "placeholder",
+"Ian.HotelReaction.Gathering": "placeholder",
+//Authorities
+"Lenny.HotelReaction.Gathering": "placeholder",
+"Lewis.HotelReaction.Gathering": "placeholder",
+//Civilians
+"Ezekiel.HotelReaction.Gathering": "placeholder",
+"Aguar.HotelReaction.Gathering": "placeholder",
+"Freddie.HotelReaction.Gathering": "placeholder",
+"Lola.HotelReaction.Gathering": "placeholder",
+"Pika.HotelReaction.Gathering": "placeholder",
+"Keahi.HotelReaction.Gathering": "placeholder",
+"Trinnie.HotelReaction.Gathering": "placeholder",
+"Yuuma.HotelReaction.Gathering": "placeholder",
+
+//Day after Ember of Resolutions Festival
+"Richard.HotelReaction.EoR": "placeholder",
+"Ysabelle.HotelReaction.EoR": "placeholder",
+"Philip.HotelReaction.EoR": "placeholder",
+"Flor.HotelReaction.EoR": "placeholder",
+"Naomi.HotelReaction.EoR": "placeholder",
+"Ceina.HotelReaction.EoR": "placeholder",
+"Ian.HotelReaction.EoR": "placeholder",
+//Authorities
+"Lenny.HotelReaction.EoR": "placeholder",
+"Lewis.HotelReaction.EoR": "placeholder",
+//Civilians
+"Ezekiel.HotelReaction.EoR": "placeholder",
+"Aguar.HotelReaction.EoR": "placeholder",
+"Freddie.HotelReaction.EoR": "placeholder",
+"Lola.HotelReaction.EoR": "placeholder",
+"Pika.HotelReaction.EoR": "placeholder",
+"Keahi.HotelReaction.EoR": "placeholder",
+"Trinnie.HotelReaction.EoR": "placeholder",
+"Yuuma.HotelReaction.EoR": "placeholder",
+
+//Day after Alissa's Concert Festival
+"Richard.HotelReaction.Concert": "placeholder",
+"Ysabelle.HotelReaction.Concert": "placeholder",
+"Philip.HotelReaction.Concert": "placeholder",
+"Flor.HotelReaction.Concert": "placeholder",
+"Naomi.HotelReaction.Concert": "placeholder",
+"Ceina.HotelReaction.Concert": "placeholder",
+"Ian.HotelReaction.Concert": "placeholder",
+//Authorities
+"Lenny.HotelReaction.Concert": "placeholder",
+"Lewis.HotelReaction.Concert": "placeholder",
+//Civilians
+"Ezekiel.HotelReaction.Concert": "placeholder",
+"Aguar.HotelReaction.Concert": "placeholder",
+"Freddie.HotelReaction.Concert": "placeholder",
+"Lola.HotelReaction.Concert": "placeholder",
+"Pika.HotelReaction.Concert": "placeholder",
+"Keahi.HotelReaction.Concert": "placeholder",
+"Trinnie.HotelReaction.Concert": "placeholder",
+"Yuuma.HotelReaction.Concert": "placeholder",
+"Alissa.HotelReaction.Concert": "placeholder",
+"Olga.HotelReaction.Concert": "placeholder",
+"Bert.HotelReaction.Concert": "placeholder",
+
+//Randomized Tourist Dialogue
+"Tourist.Dialogue.1": "placeholder",
+"Tourist.Dialogue.2": "placeholder",
+"Tourist.Dialogue.3": "placeholder",
+"Tourist.Dialogue.4": "placeholder",
+"Tourist.Dialogue.5": "placeholder",
+"Tourist.Dialogue.6": "placeholder",
+"Tourist.Dialogue.7": "placeholder",
+"Tourist.Dialogue.8": "placeholder",
+"Tourist.Dialogue.9": "placeholder",
+"Tourist.Dialogue.10": "placeholder",
+"Tourist.Dialogue.11": "placeholder",
+"Tourist.Dialogue.12": "placeholder",
+"Tourist.Dialogue.13": "placeholder",
+"Tourist.Dialogue.14": "placeholder",
+"Tourist.Dialogue.15": "placeholder",
+"Tourist.Dialogue.16": "placeholder",
+"Tourist.Dialogue.17": "placeholder",
+"Tourist.Dialogue.18": "placeholder",
+"Tourist.Dialogue.19": "placeholder",
+"Tourist.Dialogue.20": "placeholder",
 }

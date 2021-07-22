@@ -1,0 +1,8 @@
+1.1.2
+> Fixed crashes during night and rainy
+
+1.1.0
+> Fixed Festival Locations
+> Updated character sprites
+> Updated JSON Assets
+> Fixed Jeric's marriage bug

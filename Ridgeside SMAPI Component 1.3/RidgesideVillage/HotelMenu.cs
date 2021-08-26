@@ -12,31 +12,50 @@ using StardewModdingAPI.Utilities;
 
 namespace RidgesideVillage
 {
-    internal class HotelMenu
+    internal static class HotelMenu
     {
         const string ROOMBOOKEDFLAG = "RSV.HotelRoomBooked";
         const string RECEPTIONBOOKEDFLAG = "RSV.ReservedReception";
         const string RECEIVEDMAILWR = "WedReceptionMail";
-        //const string BIRTHDAYBOOKEDFLAG = "RSV.BirthdayBooked";
+        const string BIRTHDAYBOOKEDFLAG = "RSV.BirthdayBooked";
         const string ENGAGEDFLAG = "RSV.IsEngagedFlag";
         const string BIRTHDAYBOOKED = "RSV.BirthdayBooked.";
+        const string ANNIVERSARYBOOKEDFLAG = "RSV.ReservedAnv";
+        const string ANNIVERSARYTODAY = "RSV.AnvToday";
 
         const int ROOMPRICE = 500;
         const int WEDDINGPRICE = 2000;
-        const int BIRTHDAYPRICE = 2000;
+        const int BIRTHDAYPRICE = 1500;
 
-        IModHelper Helper;
-        IMonitor Monitor;
-        internal void Initialize(IMod ModInstance)
+        static IModHelper Helper;
+        static IMonitor Monitor;
+        internal static void Initialize(IMod ModInstance)
         {
             Helper = ModInstance.Helper;
             Monitor = ModInstance.Monitor;
 
-            Helper.Events.Input.ButtonPressed += OnButtonPressed;
+            //Helper.Events.Input.ButtonPressed += OnButtonPressed;
             Helper.Events.GameLoop.DayStarted += OnDayStarted;
+            Helper.Events.Player.Warped += OnWarped;
+
+            TileActionHandler.RegisterTileAction("HotelCounter", HandleHotelCounterMenu);
+            TileActionHandler.RegisterTileAction("EventHallCounter", HandleEventHallMenu);
+            TileActionHandler.RegisterTileAction("RatesCounter", HandleRatesMenu);
         }
 
-        private void OnDayStarted(object sender, DayStartedEventArgs e)
+        //Informs player where there room is upon entering the 2nd floor
+        private static void OnWarped(object sender, WarpedEventArgs e)
+        {
+            if (!Context.IsMainPlayer)
+                return;
+
+            if (Game1.currentLocation.Name.Contains("Custom_Ridgeside_LogCabinHotel2ndFloor") && Game1.player.mailReceived.Contains(ROOMBOOKEDFLAG))
+            {
+                Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("HotelRoom.DirectionsAlert"));
+            }
+        }
+
+        private static void OnDayStarted(object sender, DayStartedEventArgs e)
         {
             if (Game1.player.mailReceived.Contains(ROOMBOOKEDFLAG))
             {
@@ -67,56 +86,70 @@ namespace RidgesideVillage
             }
 
             //If it's after wedding day and the player didn't attend their booked Wedding Reception
-            if (!Game1.player.eventsSeen.Contains(75160245) && !Game1.weddingToday && Game1.player.mailReceived.Contains(RECEPTIONBOOKEDFLAG))
+            if (!Game1.player.eventsSeen.Contains(75160245) && !Game1.weddingToday && Game1.player.mailReceived.Contains(RECEPTIONBOOKEDFLAG) && Game1.player.isMarried())
             {
                 Game1.player.mailReceived.Remove(RECEPTIONBOOKEDFLAG);
             }
+
+            //removes booked flag next day
+            if (!Game1.player.mailReceived.Contains(BIRTHDAYBOOKEDFLAG))
+            {
+                foreach (var entry in Game1.player.mailReceived)
+                {
+                    if (entry.StartsWith(BIRTHDAYBOOKED))
+                    {
+                        Game1.player.mailReceived.Remove(entry);
+                    }
+                }
+            }
+
+            if (Game1.player.eventsSeen.Contains(75160247) && Game1.player.mailReceived.Contains(BIRTHDAYBOOKEDFLAG))
+            {
+                Game1.player.eventsSeen.Remove(75160247);
+                Game1.player.mailReceived.Remove(BIRTHDAYBOOKEDFLAG);
+            }
+
+            //Adds ANNIVERSARYTODAY flag if it's the next day after booking
+            if (Game1.player.mailReceived.Contains(ANNIVERSARYBOOKEDFLAG))
+            {
+                Game1.player.mailReceived.Add(ANNIVERSARYTODAY);
+            }
+
+            //Removes seeing and booking anniversary event after event
+            if (Game1.player.eventsSeen.Contains(75160248) && Game1.player.mailReceived.Contains(ANNIVERSARYBOOKEDFLAG))
+            {
+                Game1.player.eventsSeen.Remove(75160248);
+                Game1.player.mailReceived.Remove(ANNIVERSARYBOOKEDFLAG);
+            }
+
+            //Removes anvtoday flag after next day
+            if (Game1.player.mailReceived.Contains(ANNIVERSARYTODAY))
+            {
+                Game1.player.mailReceived.Remove(ANNIVERSARYTODAY);
+                Game1.player.eventsSeen.Remove(75160248);
+            }
+
+            //Alerts player on wake up about birthday party
+            string npcName = GetTodaysBirthdayNPC();
+            if ( npcName != null)
+            {
+                NPC npc = Game1.getCharacterFromName(npcName);
+                if (npc != null)
+                {
+                    string alertText = Helper.Translation.Get("EventHall.TodayBirthday", new { name = npc.displayName });
+                    Game1.activeClickableMenu = new DialogueBox(alertText);
+                }
+            }
         }
 
-        internal void OnButtonPressed(object sender, ButtonPressedEventArgs e)
+        private static void HandleRatesMenu(string tileActionString = "")
         {
-            // ignore if player hasn't loaded a save yet
-            if (!Context.IsWorldReady)
-                return;
-
-            if (!Game1.currentLocation.Name.Equals("Custom_Ridgeside_LogCabinHotelLobby"))
-            {
-                return;
-            }
-            //Checks if player can move
-            bool probablyDontCheck =
-            !StardewModdingAPI.Context.CanPlayerMove
-            || Game1.player.isRidingHorse()
-            || Game1.currentLocation == null
-            || Game1.eventUp
-            || Game1.isFestival()
-            || Game1.IsFading();
-            //Will only trigger if player can move
-            if (probablyDontCheck)
-            {
-                return;
-            }
-
-            if (!e.Button.IsActionButton())
-                return;
-            Vector2 clickedTile = Helper.Input.GetCursorPosition().GrabTile;
-            string str = Game1.currentLocation.doesTileHaveProperty(((int)clickedTile.X), ((int)clickedTile.Y), "Action", "Buildings");
-            //Booking a room
-            if (str != null && str.Contains("HotelCounter"))
-            {
-                HandleHotelCounterMenu();
-            }
-
-            //Reserving an event in event hall
-            if (str != null && str.Contains("EventHallCounter"))
-            {
-                HandleEventHallMenu();
-            }
+            Game1.activeClickableMenu = new LetterViewerMenu(Helper.Translation.Get("LogCabinHotel.Rates.Expanded"));
         }
 
-        private void HandleHotelCounterMenu()
+        private static void HandleHotelCounterMenu(string tileActionString = "")
         {
-            if (Game1.player.Money >= 500 && !Game1.player.mailReceived.Contains(ROOMBOOKEDFLAG))
+            if (Game1.player.Money >= ROOMPRICE && !Game1.player.mailReceived.Contains(ROOMBOOKEDFLAG))
             {
                 var responses = new List<Response>
                     {
@@ -127,7 +160,7 @@ namespace RidgesideVillage
                     {
                         delegate
                         {
-                            Game1.player.Money -= 500;
+                            Game1.player.Money -= ROOMPRICE;
                             Game1.player.mailReceived.Add(ROOMBOOKEDFLAG);
                             Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("HotelCounter.Booking.AfterBooking"));
                         },
@@ -140,26 +173,26 @@ namespace RidgesideVillage
             {
                 Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("HotelCounter.Booking.AlreadyBooked"));
             }
-            else if (Game1.player.Money < 500)
+            else if (Game1.player.Money < ROOMPRICE)
             {
                 Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("HotelCounter.Booking.NotEnoughMoney"));
 
             }
         }
 
-        private void HandleEventHallMenu()
+        private static void HandleEventHallMenu(string tileActionString = "")
         {
             //If player doesn't have enough money to book an event
-            if (Game1.player.Money < 2000)
+            if (Game1.player.Money < 1500)
             {
                 Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("EventHallCounter.Booking.NotEnoughMoney"));
             }            
-            //If player has booked both events
-            else if (HotelMenu.IsThereUpcomingBirthdayBooked() || (Game1.player.mailReceived.Contains(RECEPTIONBOOKEDFLAG)))
+            //If player has booked an event
+            else if (HotelMenu.IsThereUpcomingBirthdayBooked() || Game1.player.mailReceived.Contains(RECEPTIONBOOKEDFLAG) || Game1.player.mailReceived.Contains(ANNIVERSARYBOOKEDFLAG))
             {
                 Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("EventHallCounter.Booking.AlreadyBooked"));
             }
-            //player has enough money and not booked both events
+            //player has enough money and not any event
             else
             {
                 var responses = new List<Response>();
@@ -180,7 +213,7 @@ namespace RidgesideVillage
                 }
                 if(!Game1.player.mailReceived.Contains(RECEPTIONBOOKEDFLAG) && Game1.player.isEngaged())
                 {
-                    Response receptionesponse = new Response("bday", Helper.Translation.Get("EventHallCounter.Booking.BirthdayParty"));
+                    Response receptionesponse = new Response("weddingReception", Helper.Translation.Get("EventHallCounter.Booking.WeddingReception"));
                     responses.Add(receptionesponse);
 
                     Action receptionAction = delegate {
@@ -189,13 +222,25 @@ namespace RidgesideVillage
                     responseActions.Add(receptionAction);
                 }
 
+                if(Game1.player.isMarried())
+                {
+                    Response anvresponse = new Response("anvParty", Helper.Translation.Get("EventHallCounter.Anv.Title"));
+                    responses.Add(anvresponse);
+
+                    Action anvAction = delegate
+                    {
+                        HandleAnniversaryMenu();
+                    };
+                    responseActions.Add(anvAction);
+                }
+
                 responses.Add(new Response("no", Helper.Translation.Get("HotelCounter.Booking.No")));
                 responseActions.Add(delegate { });
                 Game1.activeClickableMenu = new DialogueBoxWithActions(Helper.Translation.Get("EventHallCounter.Booking.Question"), responses, responseActions);
             }
         }
 
-        private void HandleReceptionEventMenu()
+        private static void HandleReceptionEventMenu()
         {
             var responses = new List<Response>
                     {
@@ -216,7 +261,7 @@ namespace RidgesideVillage
             Game1.activeClickableMenu = new DialogueBoxWithActions(Helper.Translation.Get("EventHallCounter.Booking.Question"), responses, responseActions);
         }
 
-        private void HandleBirthdayEventMenu()
+        private static void HandleBirthdayEventMenu()
         {
             //Do you want to throw party for 2k?
             var responses = new List<Response>
@@ -231,17 +276,17 @@ namespace RidgesideVillage
                         {
                             HandleBirthDayNPCSelectionMenu();
                         },
-                        delegate { HandleHotelCounterMenu(); }
+                        delegate { HandleEventHallMenu(); }
                     };
 
             Game1.activeClickableMenu = new DialogueBoxWithActions(Helper.Translation.Get("EventHallCounter.Booking.Question"), responses, responseActions);
         }
-        private void HandleBirthDayNPCSelectionMenu()
+        private static void HandleBirthDayNPCSelectionMenu()
         {
 
             var responses = new List<Response>();
             var responseActions = new List<Action>();
-            var NPCList = NPCBirthdaysInNextNDays(10);
+            var NPCList = NPCBirthdaysInNextNDays(3);
 
             foreach(var NPCtuple in NPCList)
             {
@@ -251,6 +296,8 @@ namespace RidgesideVillage
                 {
                     Game1.player.Money -= BIRTHDAYPRICE;
                     Game1.player.mailReceived.Add(BIRTHDAYBOOKED + NPCName + "." + NPCtuple.Item2);
+                    Game1.player.mailReceived.Add(BIRTHDAYBOOKEDFLAG);
+                    Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("EventHallCounter.Booking.Bday.AfterBooking"));
                 });
             }
             responses.Add(new Response("", Helper.Translation.Get("Exit.Text")));
@@ -259,10 +306,10 @@ namespace RidgesideVillage
                 HandleBirthdayEventMenu();
             });
 
-            Game1.activeClickableMenu = new DialogueBoxWithActions("Imagine a dialogue to chose a birthday NPC here.", responses, responseActions);
+            Game1.activeClickableMenu = new DialogueBoxWithActions(Helper.Translation.Get("EventHallCounter.Booking.Bday.List"), responses, responseActions);
         }
 
-        private HashSet<Tuple<string, string>> NPCBirthdaysInNextNDays(int n)
+        private static HashSet<Tuple<string, string>> NPCBirthdaysInNextNDays(int n)
         {
             HashSet<Tuple<string, string>> birthdayNPCs = new HashSet<Tuple<string, string>>();
             SDate startDate = SDate.Now().AddDays(1);
@@ -285,7 +332,7 @@ namespace RidgesideVillage
                         //if birthday in the past, add a year
                         birthday = birthday.AddDays(112);
                     }
-                    if(startDate < birthday && birthday <= endDate)
+                    if(startDate <= birthday && birthday <= endDate)
                     {
                         birthdayNPCs.Add(new Tuple<string, string>(k.Name, $"{birthday.Day}-{birthday.Season}-{birthday.Year}"));
                     }
@@ -298,6 +345,30 @@ namespace RidgesideVillage
             }
 
             return birthdayNPCs;
+        }
+
+        private static void HandleAnniversaryMenu()
+        {
+            var responses = new List<Response>
+            {
+                new Response("yes", Helper.Translation.Get("EventHallCounter.Anv.Yes")),
+                new Response("no", Helper.Translation.Get("EventHallCounter.Booking.No"))
+            };
+
+            var responseActions = new List<Action>
+            {
+                delegate
+                {
+                    Game1.player.Money -= WEDDINGPRICE;
+                    Game1.player.mailReceived.Add(ANNIVERSARYBOOKEDFLAG);
+                    Game1.activeClickableMenu = new DialogueBox(Helper.Translation.Get("EventHallCounter.Anv.AfterBooking"));
+                },
+                delegate
+                {
+                    HandleEventHallMenu();
+                }
+            };
+            Game1.activeClickableMenu = new DialogueBoxWithActions(Helper.Translation.Get("EventHallCounter.Anv.Question"), responses, responseActions);
         }
 
         internal static bool IsThereUpcomingBirthdayBooked()
@@ -327,6 +398,7 @@ namespace RidgesideVillage
             return false;
         }
 
+        //returns name of NPC if it has birthday today AND there is a birthdayevent booked
         internal static string GetTodaysBirthdayNPC()
         {
             SDate today = SDate.Now();

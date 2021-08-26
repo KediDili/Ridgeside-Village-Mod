@@ -2,6 +2,7 @@
 "Changes": [
 
 	{
+		//temp schedule when hidden
 		"Action": "EditData",
 		"Target": "Characters/Schedules/Naomi",
 		"Entries": {
